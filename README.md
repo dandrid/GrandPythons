@@ -37,3 +37,5 @@ The loading of the pre-processed data set and the training of the model is done 
 (There is another version which uses InceptionV3, it is in **2_bulid_model.ipynb**.)
 
 Use the Data Set published [here](https://drive.google.com/open?id=1a2TRcqj5ySMWwetfU3Zgq4FE-highOKK) to re-run.
+
+The documentetion for the project is in **documentation.pdf**
