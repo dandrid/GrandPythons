@@ -1,4 +1,4 @@
-# GrandPythons - Milestone 2
+# GrandPythons 
 
 The title of our chosen exercise is **Speech-based emotion recognition**.
 
@@ -8,7 +8,9 @@ We decided to use the **RAVDESS** Data Set.  https://zenodo.org/record/1188976#.
 
 ## Data Preparation
 
-The Data Set is preprocessed in 5 steps. This is done in the **1_prepare_data.ipynb** file. The results of the first three steps are serialized.
+The Data Set is preprocessed in 2 different ways. In the first method we used spectograms and in the second method we used Mel Frequency Cepstral Coefficient (MFCC) of the audio files.
+The spectograms are prepared in **1_prepare_data_mod.ipynb** file. And the MFFC are done in **1_prepare_data_mfcc.ipynb** file.
+(We modified the data preprocessing from Milestone 1, the old code is in the **1_prepare_data.ipynb** file.)
 
 1. **STEP 1** trimming the silent data from the audio
 2. **STEP 2** enriching the data set by adding noise to the audio data
@@ -27,4 +29,10 @@ We have published the used Data Set versions on Google Drive
 
 ## Model Train
 
-The loading of the pre-processed data set and the training ofthe model is done in the **2_build_model.ipynb** file. Use the Data Set published [here](https://drive.google.com/open?id=1a2TRcqj5ySMWwetfU3Zgq4FE-highOKK) to re-run.
+The loading of the pre-processed data set and the training of the model is done in 3 different version.
+The first method was the ResNet, it is done in **2_build_resnet_model.ipynb**.
+The second method is the own convulutinal nwtwork in **2_build_own_model.ipynb** file.
+The third method is the MFCC, it is done in **2_bulid_model_mfcc.ipynb** file.
+(There is another version which uses Inceptionv3, it is in **2_bulid_model.ipynb**.)
+
+Use the Data Set published [here](https://drive.google.com/open?id=1a2TRcqj5ySMWwetfU3Zgq4FE-highOKK) to re-run.
